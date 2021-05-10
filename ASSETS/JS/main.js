@@ -163,3 +163,22 @@ function reverseString(str) {
  
 var result = reverseString("hello");
 console.log(result);
+
+
+/* Snack 4: */
+// 1. Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi) 
+// prendendo alternativamente gli elementi da uno e dall’altro
+
+var letterArray = ['a', 'b','c'];
+var numberArray = [1, 2, 3];
+var mixArray = [];
+
+for(i = 0; i < numberArray.length; i++) {
+    var element = numberArray[i];
+    mixArray.push(element,letterArray[i]);
+}
+
+console.log(mixArray);
+
+
+
