@@ -154,7 +154,7 @@ console.log('Peso Little: ' + pesoLittle); */
 // 1. Scrivi una funzione che accetti una stringa come argomento
 // 2. e la ritorni girata (es. Ciao -> oaiC)
 
-function reverseString(str) {
+/* function reverseString(str) {
     var splitString = str.split("");
     var reverseArray = splitString.reverse();
     var joinArray = reverseArray.join("");
@@ -162,14 +162,14 @@ function reverseString(str) {
 }
  
 var result = reverseString("hello");
-console.log(result);
+console.log(result); */
 
 
-/* Snack 4: */
+/* SNACK 4: */
 // 1. Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi) 
 // prendendo alternativamente gli elementi da uno e dall’altro
 
-var letterArray = ['a', 'b','c'];
+/* var letterArray = ['a', 'b','c'];
 var numberArray = [1, 2, 3];
 var mixArray = [];
 
@@ -178,7 +178,44 @@ for(i = 0; i < numberArray.length; i++) {
     mixArray.push(element,letterArray[i]);
 }
 
-console.log(mixArray);
+console.log(mixArray); */
+
+
+
+/* SNACK 5: */
+// 1. Scrivi una funzione che accetti tre argomenti:
+// 2. un array e due numeri (“a” più piccolo di “b” e “b” grande al massimo quanto il numero di elementi dell’array).
+// 3. La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra “a” e “b”
+
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+var newArray = [];
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+
+var b = getRndInteger(2, array.length)
+console.log('b: ' + b);
+
+var a = getRndInteger(1, b - 1)
+console.log('a: ' + a);
+
+function prova(array, number1, number2) {
+    for(var i = 0; i < array.length; i++) {
+        return array.slice(number1, number2 - 1);
+    }
+}
+
+var result = prova(array, a, b);
+console.log('I numeri compresi sono: ' + result);
+
+if(result == ''){
+    alert('Non ci sono numeri compresi')
+}
+
+
+
 
 
 
