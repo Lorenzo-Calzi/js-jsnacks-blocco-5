@@ -2,54 +2,54 @@
 // 1. Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza.
 // 2. Calcola quanto pesano tutte le zucchine.
 
-/* var zucchina = [
+var zucchina = [
     {
-        nome: 'tipo1',
+        nome: 'Zucchina lunga fiorentina',
         peso: 5,
         lunghezza: 10
     },
     {
-        nome: 'tipo2',
+        nome: 'Zucchino siciliano',
         peso: 3,
         lunghezza: 7
     },
     {
-        nome: 'tipo3',
+        nome: 'Zucchina bianca triestina',
         peso: 4,
         lunghezza: 5
     },
     {
-        nome: 'tipo4',
+        nome: 'Zucchina rigata pugliese',
         peso: 9,
         lunghezza: 4
     },
     {
-        nome: 'tipo5',
+        nome: 'Zucchino tondo di Firenze',
         peso: 2,
         lunghezza: 3
     },
     {
-        nome: 'tipo6',
+        nome: 'Zucchina pâtisson',
         peso: 10,
         lunghezza: 12
     },
     {
-        nome: 'tipo7',
+        nome: 'Zucchino giallo',
         peso: 6,
         lunghezza: 5
     },
     {
-        nome: 'tipo8',
+        nome: 'Zucchina Crookneck',
         peso: 1,
         lunghezza: 2
     },
     {
-        nome: 'tipo9',
+        nome: 'Zucchina striata di Napoli',
         peso: 12,
         lunghezza: 14
     },
     {
-        nome: 'tipo10',
+        nome: 'Zucchina lunga fiorentina',
         peso: 3,
         lunghezza: 4
     },
@@ -62,7 +62,7 @@ for(i = 0; i < zucchina.length; i++) {
     pesoTot += element.peso;
 }
 
-console.log('Il peso totale è: ' + pesoTot); */
+console.log('Il peso totale è: ' + pesoTot);
 
 
 
@@ -71,7 +71,7 @@ console.log('Il peso totale è: ' + pesoTot); */
 // 2. Dividi in due array separati le zucchine che misurano meno o più di 15cm.
 // 3. Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 
-/* var zucchina = [
+var zucchina = [
     {
         nome: 'tipo1',
         peso: 5,
@@ -146,7 +146,7 @@ for(i = 0; i < zucchina.length; i++) {
 console.log(big);
 console.log(little);
 console.log('Peso Big: ' + pesoBig);
-console.log('Peso Little: ' + pesoLittle); */
+console.log('Peso Little: ' + pesoLittle);
 
 
 
@@ -154,7 +154,7 @@ console.log('Peso Little: ' + pesoLittle); */
 // 1. Scrivi una funzione che accetti una stringa come argomento
 // 2. e la ritorni girata (es. Ciao -> oaiC)
 
-/* function reverseString(str) {
+function reverseString(str) {
     var splitString = str.split("");
     var reverseArray = splitString.reverse();
     var joinArray = reverseArray.join("");
@@ -162,15 +162,16 @@ console.log('Peso Little: ' + pesoLittle); */
 }
  
 var result = reverseString("hello");
-console.log(result); */
+console.log(result);
+
 
 
 /* SNACK 4: */
 // 1. Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi) 
 // prendendo alternativamente gli elementi da uno e dall’altro
 
-/* var letterArray = ['a', 'b','c'];
 var numberArray = [1, 2, 3];
+var letterArray = ['a', 'b','c'];
 var mixArray = [];
 
 for(i = 0; i < numberArray.length; i++) {
@@ -178,7 +179,7 @@ for(i = 0; i < numberArray.length; i++) {
     mixArray.push(element,letterArray[i]);
 }
 
-console.log(mixArray); */
+console.log(mixArray);
 
 
 
