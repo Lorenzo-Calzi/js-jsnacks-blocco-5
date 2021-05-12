@@ -188,7 +188,7 @@ console.log(mixArray);
 // 2. un array e due numeri (“a” più piccolo di “b” e “b” grande al massimo quanto il numero di elementi dell’array).
 // 3. La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra “a” e “b”
 
-var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var array = ['a', '2', '3', 'ciao', '5', '6', '7', '8', '9', '10'];
 
 var newArray = [];
 
@@ -208,15 +208,11 @@ function prova(array, number1, number2) {
     }
 }
 
-var result = prova(array, a, b);
-console.log('I numeri compresi sono: ' + result);
-
-if(result == ''){
+if((b - a) == 1) {
     alert('Non ci sono numeri compresi')
+} else {
+    var result = prova(array, a, b);
+    console.log('I numeri compresi sono: ' + result);
 }
-
-
-
-
 
 
